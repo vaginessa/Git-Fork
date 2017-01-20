@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".search_repos.view.SearchReposActivity">
+
+    <EditText
+        android:id="@+id/userInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/user_text_hint"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin" />
+
+    <Button
+        android:id="@+id/btnBuscarRepos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:text="@string/btn_search_repos"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin" />
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:src="@drawable/github_logo"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Listado de Repositorios"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@android:color/white"
+        android:padding="8dp"
+        android:visibility="gone"
+        android:textAlignment="center"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:id="@+id/txtReposList" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/reposList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

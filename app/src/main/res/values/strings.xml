@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Git Fork</string>
+    <string name="search_hint">Ingrese un usuario..</string>
+    <string name="action_search">Buscar usuario</string>
+    <string name="action_text_search">Buscar usuario</string>
+    <string name="user_text_hint">Ingresar un usuario..</string>
+    <string name="btn_search_repos">Buscar Repositorios</string>
+    <string name="dialog_message">Buscando repositorios...</string>
+</resources>
